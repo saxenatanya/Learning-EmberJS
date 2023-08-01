@@ -8,16 +8,11 @@
       @color={{this.color}}
       @onChangeColor={{this.onChangeColor}}/>
   </div>
-  </div>
-  <h5 class="mt-5">Features</h5>
+
   <h5 class="mt-5">Features</h5>
   <ul>
-  <ul>
-    <li>High-performance wireless noise cancelling headphones in red</li>
-    {{#each this.model.features as |feature|}}
-    <li>Active Noise Cancelling (ANC) blocks external noise</li>
+   {{#each this.model.features as |feature|}}
       <li>{{feature}}</li>
-    <li>Transparency helps you stay aware of your surroundings while listening</li>
     {{/each}}
   </ul>
 </GeneralContainer>
